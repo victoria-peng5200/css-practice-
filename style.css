@@ -87,3 +87,38 @@ p {
 .barcodeImg:hover{
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
 }
+
+/* Media Query for small screens (max-width: 400px) */
+@media (max-width: 480px) {
+  .box {
+    width: 90%; /* Take up 90% of the viewport width */
+    height: auto; /* Auto height for better responsiveness */
+    border-width: 5px; /* Thinner border for smaller screens */
+  }
+
+  .container {
+    font-size: 15px; /* Reduce font size for readability on small screens */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .logo {
+    width: 50%; /* Scale down the logo */
+    margin: 5px; /* Adjust margin */
+    padding-bottom: 5px; /* Adjust padding */
+  }
+
+  .wifiImg {
+    width: 20px; /* Reduce wifi image size */
+    margin: 5px; /* Adjust margin */
+  }
+
+  .barcode {
+    top: 10px; /* Adjust position for small screens */
+    right: 10px; /* Adjust position */
+    font-size: 15px; /* Reduce font size */
+  }
+
+  .barcodeImg {
+    width: 50px; /* Reduce barcode image size */
+  }
+}
